@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Katik</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <h1 class="animate-charcter">Katik</h1>
+        <h3>Kalkulator Matematik</h3>
+    </header>
+    <div class="container">
+        <h2>Welcome to Katik</h2>
+            <p style="text-align: center; padding-bottom: 0; margin-bottom: 0;">Hai Sobat, Selamat datang di Katik &#128522;</p>
+            <p style="text-align: center; margin-top: 0;">Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+            <div>
+                <button onclick="persegi()" class="button">Persegi</button>
+                <button onclick="persegipanjang()" class="button">Persegi Panjang</button>
+            </div>
+        
+            <div class="containerpersegi">
+                <h2>Hitung Bangun Datar Persegi</h2>
+                <div class="calculator">
+                    <input type="number" id="sisi" class="input" placeholder="Nilai Sisi" required><br>
+                    <button onclick="calculateLuas()" class="button">Hitung Luas</button><br>
+                    <button onclick="calculateKeliling()" class="button">Hitung Keliling</button><br>
+                    <button onclick="resetInput()" class="reset">Reset</button><br>
+
+                    <div id="resultContainerPersegi"></div>
+                </div>
+            </div>
+
+            <div class="containerpersegipanjang" style="display: none;">
+                <h2>Hitung Bangun Datar Persegi Panjang</h2>
+                <div class="calculator">
+                    <input type="number" id="panjang" class="input" placeholder="Panjang" required>
+                    <input type="number" id="lebar" class="input" placeholder="Lebar" required><br>
+                    <button onclick="calculateLuasPersegiPanjang()" class="button">Hitung Luas</button><br>
+                    <button onclick="calculateKelilingPersegiPanjang()" class="button">Hitung Keliling</button><br>
+                    <button onclick="resetInputPersegiPanjang()" class="reset">Reset</button><br>
+                    <div id="resultContainerPersegiPanjang"></div>
+                </div>
+            </div>
+    </div>
+        
+</body>
+
+<footer>
+    <p>&copy; 2024 Katik.</p></span> Katik All Rights Reserved<br />
+</footer>
+</html>
