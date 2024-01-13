@@ -6,8 +6,8 @@ body {
 }
 
 .container {
-  max-width: 90%;
-  margin: 30px auto;
+  max-width: 93%;
+  margin: 10px auto;
   background-color: #c3e8f0e8;
   padding: 30px;
   border-radius: 10px;
@@ -116,6 +116,7 @@ h1 {
 h2 {
     font-size: 30px;
     text-align: center;
+    margin-top: 10px;
 }
 
 h3 {
@@ -149,3 +150,33 @@ h3 {
     background-position: 200% center;
   }
 }
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.baris {
+    flex: 1;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    max-width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    border: 3px dashed #ccc;
+    background-color: #c3e8f0e8;
+}
+
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(20deg); }
+    50% { transform: rotate(-20deg); }
+    75% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  img.swing {
+    max-width: 50px;
+    animation: swing 2s ease-in-out infinite;
+  }

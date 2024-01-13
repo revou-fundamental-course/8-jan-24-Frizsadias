@@ -102,7 +102,7 @@ function calculateLuasPersegiPanjang() {
   const resultMessage = `
     <p>Luas Persegi Panjang: panjang x lebar</p>
     <p>Luas Persegi Panjang: ${panjang} x ${lebar}</p>
-    <p>Luas Persegi Panjang: ${luas}</p>
+    <p><strong>Luas Persegi Panjang: ${luas}</strong></p>
   `;
 
   document.getElementById("resultContainerPersegiPanjang").innerHTML = resultMessage;
@@ -125,8 +125,8 @@ function calculateKelilingPersegiPanjang() {
 
   const resultMessage = `
     <p>Keliling Persegi Panjang: 2 x (panjang + lebar)</p>
-    <p>Keliling Persegi Panjang: 2 x (${panjang} x ${lebar})</p>
-    <p>Keliling Persegi Panjang: ${keliling}</p>
+    <p>Keliling Persegi Panjang: 2 x (${panjang} + ${lebar})</p>
+    <p><strong>Keliling Persegi Panjang: ${keliling}</strong></p>
   `;
 
   document.getElementById("resultContainerPersegiPanjang").innerHTML =
